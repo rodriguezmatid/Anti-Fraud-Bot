@@ -21,13 +21,13 @@ try:
 except:
     print("Error during authentication")
 
-respuesta = "Acabas de nombrar la palabra prohibida, muchos bot van a contestarte con el objetivo de estafarte. \nLas cuentas oficiales son @metamask y @metamasksupport"
+respuesta = "Acabas de nombrar la palabra prohibida, muchos bot van a contestarte con el objetivo de estafarte. \n \nLas cuentas oficiales son @metamask y @metamasksupport"
 TIME_DELAY = 30
 
 original_tweet_id = 0
 while True:
     try:
-        tweet = api.search_tweets(q="(metamask) (-from:AntiMetamask)", lang='es', count=1, result_type = "recent")
+        tweet = api.search_tweets(q="(metamask) (-from:antifraudbot)", lang='es', count=1, result_type = "recent")
         if (original_tweet_id != tweet[0].id):
             try:
                 api.update_status(status = respuesta, in_reply_to_status_id = tweet[0].id , auto_populate_reply_metadata=True)
