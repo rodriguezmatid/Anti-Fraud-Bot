@@ -21,7 +21,7 @@ try:
 except:
     print("Error during authentication")
 
-respuesta = "Acabas de nombrar la palabra prohibida, muchos bot van a contestarte con el objetivo de estafarte. \n \nLas cuentas oficiales son @metamask y @metamasksupport"
+respuesta = "Acabas de nombrar la palabra prohibida 👀, muchos bots van a contestarte con el objetivo de estafarte. \n \nLas cuentas oficiales de soporte son @metamask y @metamasksupport \n \n🚨 Tené cuidado, nadie va a pedirte tus claves privadas!"
 TIME_DELAY = 30
 
 original_tweet_id = 0
